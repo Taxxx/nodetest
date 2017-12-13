@@ -17,10 +17,23 @@
     "rating": {
       "type": "number",
       "required": true
+    },
+    "restaurantId": {
+      "type": "number",
+      "required": true,
+      "postgresql": {
+        "columnName": "id_restaurant"
+      }
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "restaurant": {
+      "type": "belongsTo",
+      "model": "restaurant",
+      "foreignKey": "restaurantId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

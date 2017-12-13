@@ -50,7 +50,14 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "reviews": {
+      "type": "hasMany",
+      "model": "review",
+      "foreignKey": "restaurantId",
+      "primaryKey": "id"
+    }
+  },
   "acls": [],
   "methods": {}
 }
