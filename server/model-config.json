@@ -12,5 +12,17 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "restaurant": {
+    "dataSource": "nodetest",
+    "public": true
+  },
+  "meal": {
+    "dataSource": "nodetest",
+    "public": true
+  },
+  "review": {
+    "dataSource": "nodetest",
+    "public": true
   }
 }

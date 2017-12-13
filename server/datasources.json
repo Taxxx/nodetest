@@ -1,1 +1,12 @@
-{}
+{
+  "nodetest": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "postgres://postgres:postgres@localhost/nodetest",
+    "database": "nodetest",
+    "password": "postgres",
+    "name": "nodetest",
+    "user": "postgres",
+    "connector": "postgresql"
+  }
+}

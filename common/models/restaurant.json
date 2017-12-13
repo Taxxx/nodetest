@@ -1,0 +1,56 @@
+{
+  "name": "restaurant",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "logo": {
+      "type": "string",
+      "required": true,
+      "postgresql": {
+        "columnName": "logo"
+      }
+    },
+    "commercialName": {
+      "type": "string",
+      "required": true,
+      "postgresql": {
+        "columnName": "commercial_name"
+      }
+    },
+    "legalName": {
+      "type": "string",
+      "required": true,
+      "postgresql": {
+        "columnName": "legal_name"
+      }
+    },
+    "rating": {
+      "type": "number",
+      "required": true,
+      "postgresql": {
+        "columnName": "rating"
+      }
+    },
+    "adminNumber": {
+      "type": "string",
+      "required": true,
+      "postgresql": {
+        "columnName": "admin_number"
+      }
+    },
+    "address": {
+      "type": "string",
+      "required": true,
+      "postgresql": {
+        "columnName": "address"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
