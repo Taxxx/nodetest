@@ -4,8 +4,9 @@ Requirements:
 * Postgres 9.6
 
 ## Steps to run the project
-* Restore the postgres db using this restore file `db/nodetest`
 * Clone the project
+* Restore the postgres db using this restore file `db/nodetest`
+* Check and update if you need the configuration on datasource.json files (db postgres connection)
 * `cd nodetest`
 * `npm install`
 * `node .`
