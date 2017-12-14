@@ -1,0 +1,54 @@
+{
+  "name": "order",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "mealId": {
+      "type": "number",
+      "required": true,
+      "postgresql": {
+        "columnName": "id_meal"
+      }
+    },
+    "restaurantId": {
+      "type": "number",
+      "required": true,
+      "postgresql": {
+        "columnName": "id_restaurant"
+      }
+    },
+    "totalCost": {
+      "type": "number",
+      "required": true,
+      "postgresql": {
+        "columnName": "total_cost"
+      }
+    },
+    "address": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "restaurant": {
+      "type": "belongsTo",
+      "model": "restaurant",
+      "foreignKey": "restaurantId"
+    },
+    "meals": {
+      "type": "hasMany",
+      "model": "meal",
+      "foreignKey": "mealId",
+      "primaryKey": "id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

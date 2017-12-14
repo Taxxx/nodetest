@@ -24,5 +24,9 @@
   "review": {
     "dataSource": "nodetest",
     "public": true
+  },
+  "order": {
+    "dataSource": "nodetest",
+    "public": true
   }
 }

@@ -63,6 +63,18 @@
       "model": "review",
       "foreignKey": "restaurantId",
       "primaryKey": "id"
+    },
+    "meals": {
+      "type": "hasMany",
+      "model": "meal",
+      "foreignKey": "restaurantId",
+      "primaryKey": "id"
+    },
+    "orders": {
+      "type": "hasMany",
+      "model": "order",
+      "foreignKey": "restaurantId",
+      "primaryKey": "id"
     }
   },
   "acls": [],

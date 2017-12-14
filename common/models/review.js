@@ -13,10 +13,14 @@ module.exports = function(Review) {
         });
         avg = sum / reviews.length;
         Restaurant.findById(restaurantId, function(err, restaurant) {
-          restaurant.updateAttributes({rating: avg});
-          restaurant.save();
+          if (!err) {
+            restaurant.updateAttributes({rating: avg});
+            restaurant.save();
+            cb(null, avg);
+          } else {
+            cb(null, {error: err});
+          }
         });
-        cb(null, avg);
       } else {
         cb(null, null);
       }
