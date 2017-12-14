@@ -41,12 +41,6 @@
       "type": "belongsTo",
       "model": "restaurant",
       "foreignKey": "restaurantId"
-    },
-    "meals": {
-      "type": "hasMany",
-      "model": "meal",
-      "foreignKey": "mealId",
-      "primaryKey": "id"
     }
   },
   "acls": [],
