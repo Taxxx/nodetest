@@ -8,44 +8,51 @@
   "properties": {
     "logo": {
       "type": "string",
-      "required": true,
+      "required": false,
       "postgresql": {
         "columnName": "logo"
       }
     },
     "commercialName": {
       "type": "string",
-      "required": true,
+      "required": false,
       "postgresql": {
         "columnName": "commercial_name"
       }
     },
     "legalName": {
       "type": "string",
-      "required": true,
+      "required": false,
       "postgresql": {
         "columnName": "legal_name"
       }
     },
     "rating": {
       "type": "number",
-      "required": true,
+      "required": false,
       "postgresql": {
         "columnName": "rating"
       }
     },
     "adminNumber": {
       "type": "string",
-      "required": true,
+      "required": false,
       "postgresql": {
         "columnName": "admin_number"
       }
     },
     "address": {
       "type": "string",
-      "required": true,
+      "required": false,
       "postgresql": {
         "columnName": "address"
+      }
+    },
+    "location": {
+      "type": "string",
+      "required": false,
+      "postgresql": {
+        "columnName": "location"
       }
     }
   },
