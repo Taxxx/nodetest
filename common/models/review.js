@@ -1,5 +1,4 @@
 'use strict';
-// var Restaurant = require('./restaurant.js');
 
 module.exports = function(Review) {
   Review.getRatingAvg = function(restaurantId, cb) {
